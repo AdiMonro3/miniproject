@@ -46,4 +46,5 @@ const emergencyLogSchema = new mongoose.Schema(
 emergencyLogSchema.index({ location: "2dsphere" });
 
 const EmergencyLog = mongoose.model("EmergencyLog", emergencyLogSchema);
+
 export default EmergencyLog;
