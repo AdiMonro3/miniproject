@@ -39,6 +39,9 @@ const userSchema=new mongoose.Schema(
               type: [Number], // [longitude, latitude]
               required: false,
             }
+        },
+        refreshToken: {
+            type: String
         }
     },{timestamps:true}
 );
